@@ -1,5 +1,5 @@
 import * as actionType from './actionTypes';
-import {IAction, IStateCharacters} from '../interfaces';
+import {IAction, IStateCharacters} from '../../interfaces';
 
 const initialState = {
   characters: [],

@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import {IStateCharacters, ICharacter} from '../../../interfaces';
-import {getCharacter} from '../../actions';
+import {getCharacter} from '../actions';
 import {useNavigation} from '@react-navigation/native';
 
 export default function ListCharacters() {
