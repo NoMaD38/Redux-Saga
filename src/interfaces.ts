@@ -13,8 +13,37 @@ export interface ICharacter {
     created             : string
 }
 
+export interface ILocation {
+    readonly id         : number
+    name                : string
+    type                : string
+    dimension           : string
+    residents           : string[]
+    url                 : string
+    created             : string
+
+}
+
+export interface IEpisodes {
+    readonly id         : number
+    name                : string
+    air_date            : string
+    episode             : string
+    characters          : string[]
+    url                 : string
+    created             : string
+}
+
 export interface IStateCharacters {
     characters          : ICharacter[]
+}
+
+export interface IStateLocations {
+    locations           : ILocation[]
+}
+
+export interface IStateEpisodes {
+    episodes            : IEpisodes[]
 }
 
 export interface IAction {
