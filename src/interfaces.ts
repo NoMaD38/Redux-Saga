@@ -56,4 +56,18 @@ export type StackParamList = {
     Character: {
         item: ICharacter
     }
+    ListLocations: undefined,
+    Location: {
+        item: ILocation
+    }
+    ListEpisodes: undefined,
+    Episode: {
+        item: IEpisodes
+    }
   }
+
+export type DrawerParamList = {
+    Character: undefined,
+    Episode: undefined,
+    Location: undefined
+}
