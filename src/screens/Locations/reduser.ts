@@ -5,7 +5,7 @@ const initialState = {
     locations: []
 }
 
-const reducer = (state: IStateLocations = initialState, action: IAction) => {
+const reducerLocations = (state: IStateLocations = initialState, action: IAction) => {
     switch (action.type) {
         case actionType.SET_LOCATIONS:
             return {...state, locations: action.payload}
@@ -14,4 +14,4 @@ const reducer = (state: IStateLocations = initialState, action: IAction) => {
     }
 }
 
-export default reducer
+export default reducerLocations

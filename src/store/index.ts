@@ -1,12 +1,24 @@
-import {createStore, applyMiddleware} from 'redux';
+import {createStore, applyMiddleware, combineReducers} from 'redux';
 import createSagaMiddleware from 'redux-saga'
 import {rootSaga} from './rootSaga'
 
-import reducer from '../screens/Character/reducer';
+import reducerCharacter from '../screens/Character/reducer';
+import reducerEpisodes from '../screens/Episodes/reducer'
+import reducerLocations from '../screens//Locations/reduser'
+
 
 const sagaMiddleware = createSagaMiddleware()
 
-const store = createStore(reducer, applyMiddleware(sagaMiddleware));
+const rootReducer = combineReducers({
+    reducerCharacter,
+    reducerEpisodes,
+    reducerLocations
+})
+
+const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
+
+console.log(store.getState());
+
 
 sagaMiddleware.run(rootSaga)
 

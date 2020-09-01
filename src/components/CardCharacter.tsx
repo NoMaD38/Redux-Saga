@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import {ICharacter} from '../interfaces';
 
-const Card: React.FC<{item: ICharacter}> = ({item}) => {
+const CardCharacter: React.FC<{item: ICharacter}> = ({item}) => {
 
   return (
     <View style={styles.container}>
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Card
+export default CardCharacter

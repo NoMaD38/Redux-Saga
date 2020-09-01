@@ -1,7 +1,7 @@
 import React from 'react';
 import {useRoute, RouteProp, useNavigation} from '@react-navigation/native';
 import {StackParamList} from '../../../interfaces';
-import Card from '../../../components/Card';
+import CardCharacter from '../../../components/CardCharacter';
 import { View, TouchableOpacity, Text } from 'react-native';
 
 type CharacterScreenRouteProp = RouteProp<StackParamList, 'Character'>;
@@ -16,7 +16,7 @@ export default function Character() {
       <TouchableOpacity style={{margin:10}} onPress={()=>navigation.goBack()}>
         <Text style={{fontWeight:'bold', fontSize:20}}>Back</Text>
       </TouchableOpacity>
-      <Card item={item} />
+      <CardCharacter item={item} />
     </View>
   );
 }

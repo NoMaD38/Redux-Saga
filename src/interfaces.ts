@@ -35,14 +35,17 @@ export interface IEpisodes {
 }
 
 export interface IStateCharacters {
+    [x: string]: any
     characters          : ICharacter[]
 }
 
 export interface IStateLocations {
+    [x: string]: any
     locations           : ILocation[]
 }
 
 export interface IStateEpisodes {
+    [x: string]: any
     episodes            : IEpisodes[]
 }
 

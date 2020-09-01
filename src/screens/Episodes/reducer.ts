@@ -5,7 +5,7 @@ const initialState = {
     episodes: []
 }
 
-export const reducer = (state: IStateEpisodes = initialState, action: IAction) => {
+export const reducerEpisodes = (state: IStateEpisodes = initialState, action: IAction) => {
     switch (action.type){
         case actionType.SET_EPISODES:
             return {...state, episodes: action.payload}
@@ -14,4 +14,4 @@ export const reducer = (state: IStateEpisodes = initialState, action: IAction) =
     }
 }
 
-export default reducer
+export default reducerEpisodes

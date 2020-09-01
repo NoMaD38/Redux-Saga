@@ -18,13 +18,16 @@ export default function ListCharacters() {
   const characters = useSelector<
     IStateCharacters,
     IStateCharacters['characters']
-  >((state) => state.characters);
+  >((state) => state.reducerCharacter.characters);
 
   const dispath = useDispatch();
 
   React.useEffect(() => {
     dispath(getCharacter());
   }, [dispath]);
+
+  console.log(characters);
+  
 
   const rendeItem = (item: ICharacter) => (
     <TouchableOpacity
